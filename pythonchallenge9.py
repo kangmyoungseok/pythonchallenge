@@ -26,13 +26,11 @@ second = [156,141,165,135,169,131,176,130,187,134,191,140,191,146,186,150,179,15
 77,155,81,148,87,140,96,138,105,141,110,136,111,126,113,129,118,117,128,114,137,115,146,114,155,115,
 158,121,157,128,156,134,157,136,156,136]
 
-
 img = Image.open("good.jpg")
-img.show()
 
 img1 = ImageDraw.Draw(img)
-img1.line(first,fill = "red")
-img1.line(second,fill = "blue")
 
+img1.polygon(first,fill = "red")
+img1.polygon(second,fill = "blue")
 
-
+img.show()
